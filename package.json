@@ -1,0 +1,13 @@
+{
+  "name": "polymer-sass-loader",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:Haraguroicha/polymer-sass-loader.git",
+  "author": "腹黒い茶 <haraguroicha@tipsy.coffee>",
+  "license": "MIT",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "loader-utils": "^1.1.0",
+    "node-sass": "^4.5.3"
+  }
+}
