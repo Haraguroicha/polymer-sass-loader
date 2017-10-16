@@ -1,6 +1,6 @@
 {
   "name": "polymer-sass-loader",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "main": "src/index.es6",
   "files": [
     "src/index.es6"

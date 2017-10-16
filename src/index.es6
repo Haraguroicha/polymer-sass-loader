@@ -53,10 +53,14 @@ module.exports = function polymerScss(source) {
     )
     .map(
       id => {
-        const idp = id.dependencies.reduce((a, b) => a.concat(b));
-        log(`Add watch dependency from ${consoleHighlight(`@import '${id.import}'`)} => ${consoleFilename(idp)}`)
-        self.addDependency(idp);
-        return id;
+        if (id.dependencies.length > 0) {
+          const idp = id.dependencies.reduce((a, b) => a.concat(b));
+          log(`Add watch dependency from ${consoleHighlight(`@import '${id.import}'`)} => ${consoleFilename(idp)}`)
+          self.addDependency(idp);
+          return id;
+        } else {
+          return null;
+        }
       }
     );
 
